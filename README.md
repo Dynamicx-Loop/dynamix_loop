@@ -27,11 +27,11 @@ Motion Control Infra combines capture and generation, retargeting, behavioral fo
 
 ## Projects
 
-The table follows Party OS from foundational tools to interaction and whole-body control. **In use** means the team uses the repository. Other third-party entries are upstream references.
+**In use** means the team uses the repository. Other third-party entries are upstream references.
 
 | Layer | Module | Description | Repository |
 |---|---|---|---|
-| Know-how | Knowledge base | DynamiX Loop’s humanoid control knowledge base. | **Under construction** |
+| Know-how | Knowledge base | DynamiX Loop’s humanoid control knowledge base. | 🚧 **Under construction** |
 | Motion Control Infra | Data generation · `generate` | Generate motion data for policy training. | [NVIDIA Kimodo](https://github.com/nv-tlabs/kimodo) |
 | Motion Control Infra | Retargeting | **Motion Studio** is our planned primary retargeting workbench. RoboParty’s **hhtools** is the current alternative. | [DynamiX Loop Motion Studio](https://github.com/Dynamicx-Loop/motion-studio) · [RoboParty hhtools](https://github.com/Roboparty/human-humanoid-tools) |
 | Motion Control Infra | Behavioral Foundation Policy · **MimicPortal** | DynamiX Loop’s motion-tracking development repository. | [Dynamicx-Loop/mimicportal](https://github.com/Dynamicx-Loop/mimicportal) · [RoboParty upstream](https://github.com/Roboparty/PartyMimic) |

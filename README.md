@@ -63,8 +63,8 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 |---|---|---|---|---|---|
 | AMASS | Combined optical capture collections represented in SMPL-X. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/1904.03278) | [🌐&nbsp;site](https://amass.is.tue.mpg.de/) | — |
 | LAFAN1 | BVH capture of movement including locomotion, dance, falls and recovery. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2102.04942) | [💻&nbsp;GitHub](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | — |
-| BONES-SEED (SOMA) | Broad motion-capture corpus using the SOMA representation. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2603.16858) | [🤗&nbsp;HF](https://huggingface.co/datasets/bones-studio/seed) | — |
-| 100STYLE | Characterful walking and running recorded with Xsens, distributed as 60 Hz BVH. | mimic | [📄&nbsp;ACM](https://dl.acm.org/doi/10.1145/3522618) | [🌐&nbsp;site](https://www.ianxmason.com/100style/) | — |
+| BONES-SEED (SOMA) | Broad motion-capture corpus using the SOMA representation. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2603.16858) | [🤗&nbsp;HF](https://huggingface.co/datasets/bones-studio/seed) | MimicPortal |
+| 100STYLE | Characterful walking and running recorded with Xsens, distributed as 60 Hz BVH. | mimic | [📄&nbsp;ACM](https://dl.acm.org/doi/10.1145/3522618) | [🌐&nbsp;site](https://www.ianxmason.com/100style/) | MimicPortal |
 | Motion-X | Full-body motion recovered from video footage. | mimic | [📄&nbsp;NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2023/file/4f8e27f6036c1d8b4a66b5b3a947dd7b-Paper-Datasets_and_Benchmarks.pdf) | [💻&nbsp;GitHub](https://github.com/IDEA-Research/Motion-X) | — |
 | PHUMA | Humanoid movement data with physical grounding. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2510.26236) | [💻&nbsp;GitHub](https://github.com/DAVIAN-Robotics/PHUMA) | — |
 | GVHMR | Tool for reconstructing human motion from a single-camera video. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2409.06662) | [💻&nbsp;GitHub](https://github.com/zju3dv/GVHMR) | — |

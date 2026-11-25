@@ -27,22 +27,22 @@ Motion Control Infra combines capture and generation, retargeting, behavioral fo
 
 ## Projects
 
-The table follows Party OS from foundational tools to interaction and whole-body control. **Team-confirmed repository use** means the team uses that codebase; it does not imply a validated Astro integration. Other third-party entries are upstream references unless stated otherwise.
+The table follows Party OS from foundational tools to interaction and whole-body control. **In use** means the team uses the repository. Other third-party entries are upstream references.
 
 | Layer | Module | Description | Repository |
 |---|---|---|---|
-| Know-how | Knowledge base | RoboParty’s Chinese-language documentation on humanoid control. Kept as a reference. | [Humanoid Motion Control Know-how](https://roboparty.feishu.cn/wiki/GvUxwKVeNiGa7kku6vEcvqfKn87) |
+| Know-how | Knowledge base | RoboParty’s Chinese-language reference on humanoid motion control. | [Humanoid Motion Control Know-how](https://roboparty.feishu.cn/wiki/GvUxwKVeNiGa7kku6vEcvqfKn87) |
 | Motion Control Infra | Data generation · `generate` | Generate motion data for policy training. | [NVIDIA Kimodo](https://github.com/nv-tlabs/kimodo) |
-| Motion Control Infra | Retargeting | **Motion Studio** is our planned primary retargeting workbench. RoboParty’s **hhtools** remains the current alternative while Motion Studio takes over. | [DynamiX Loop Motion Studio](https://github.com/Dynamicx-Loop/motion-studio) · [RoboParty hhtools](https://github.com/Roboparty/human-humanoid-tools) |
+| Motion Control Infra | Retargeting | **Motion Studio** is our planned primary retargeting workbench. RoboParty’s **hhtools** is the current alternative. | [DynamiX Loop Motion Studio](https://github.com/Dynamicx-Loop/motion-studio) · [RoboParty hhtools](https://github.com/Roboparty/human-humanoid-tools) |
 | Motion Control Infra | Behavioral Foundation Policy · **MimicPortal** | DynamiX Loop’s motion-tracking development repository. | [Dynamicx-Loop/mimicportal](https://github.com/Dynamicx-Loop/mimicportal) · [RoboParty upstream](https://github.com/Roboparty/PartyMimic) |
-| Motion Control Infra | Unsupervised learning · `UFO` | Team-confirmed repository use. Upstream provides FB/TeCH training, robot-specific motion import and real-robot teleoperation tooling; those upstream capabilities do not imply Astro deployment. | [RoboParty/UFO](https://github.com/Roboparty/UFO) |
-| Motion Control Infra | Action diffusion · `PredActor` | Upstream reference for steering motion generation by jointly predicting future states and directly producing actions with onboard inference. | [RoboParty fork](https://github.com/Roboparty/PredActor) · [MasterYip upstream](https://github.com/MasterYip/PredActor) |
-| Motion Control Infra | Robot-free capture · `Ego Humanoid` | Capture direction preserved from the data box in the Party OS roadmap. No DynamiX Loop capture workflow or dataset release claimed. | [DynamiX Loop roadmap](#roadmap) |
-| Motion Control Infra | Deployment · **Immediate priority** | **Sim-to-sim** for policy parity, **sim-to-real** for transfer to Astro, **real-to-sim** for replay and calibration from hardware measurements. This is the near-term infrastructure focus, not completion status. | Team workstream; no repository specified |
-| Interaction & Perception Infra | Interaction BFM · `I-BFM` | Team-confirmed repository use. Upstream combines forward–backward representations with LOGO for carrying, pushing and kicking boxes. Its released carry-box example has external sensing and compute dependencies. | [RoboParty/I-BFM-Code](https://github.com/Roboparty/I-BFM-Code) · [deployment example](https://github.com/Roboparty/I-BFM-Code/tree/main/deploy/g1_carry_box_166m) |
-| Interaction & Perception Infra | Perceptive BFM · `P-BFM` | Team-confirmed repository use. The upstream terrain-adaptive controller covers tracking, goal reaching, reward inference and teleoperation. | [RoboParty/P-BFM](https://github.com/Roboparty/P-BFM) |
-| Whole-Body Manipulation Infra | JEPA world model · `INTACT-JEPA` | Upstream reference for predictive world models using action-intent encodings. | [RoboParty fork](https://github.com/Roboparty/INTACT-JEPA) · [ZJU upstream](https://github.com/zju3dv/INTACT-JEPA) |
-| Representation Learning | Anti-collapse loss · `SADL` | Upstream Supply And Demand Loss discourages representation collapse by adding a training objective that relates encoder variation to what the downstream output requires. | [RoboParty fork](https://github.com/Roboparty/SADL) · [ZJU upstream](https://github.com/zju3dv/SADL) |
+| Motion Control Infra | Unsupervised learning · `UFO` | **In use.** Learn reusable humanoid behaviors with FB and TeCH. | [RoboParty/UFO](https://github.com/Roboparty/UFO) |
+| Motion Control Infra | Action diffusion · `PredActor` | Upstream reference for generating motion and actions with diffusion. | [RoboParty fork](https://github.com/Roboparty/PredActor) · [MasterYip upstream](https://github.com/MasterYip/PredActor) |
+| Motion Control Infra | Robot-free capture · `Ego Humanoid` | Capture human motion without a robot. | [DynamiX Loop roadmap](#roadmap) |
+| Motion Control Infra | Deployment · **Immediate priority** | Transfer policies across simulators and to robots, and use hardware data to improve simulation. **Sim-to-sim · sim-to-real · real-to-sim.** | Team workstream; no repository specified |
+| Interaction & Perception Infra | Interaction BFM · `I-BFM` | **In use.** Learn whole-body skills for interacting with objects. | [RoboParty/I-BFM-Code](https://github.com/Roboparty/I-BFM-Code) · [deployment example](https://github.com/Roboparty/I-BFM-Code/tree/main/deploy/g1_carry_box_166m) |
+| Interaction & Perception Infra | Perceptive BFM · `P-BFM` | **In use.** Learn terrain-adaptive locomotion and motion tracking. | [RoboParty/P-BFM](https://github.com/Roboparty/P-BFM) |
+| Whole-Body Manipulation Infra | JEPA world model · `INTACT-JEPA` | Upstream reference for predictive world modeling from action intent. | [RoboParty fork](https://github.com/Roboparty/INTACT-JEPA) · [ZJU upstream](https://github.com/zju3dv/INTACT-JEPA) |
+| Representation Learning | Anti-collapse loss · `SADL` | Upstream reference for reducing representation collapse with Supply And Demand Loss. | [RoboParty fork](https://github.com/Roboparty/SADL) · [ZJU upstream](https://github.com/zju3dv/SADL) |
 
 **Later branches:** Agentic Humanoid and Agent RSI System remain in the diagram for source parity. No team implementation or adoption is claimed for these branches.
 

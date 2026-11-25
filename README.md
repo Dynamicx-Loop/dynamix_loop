@@ -10,7 +10,6 @@ Motion Control Infra combines capture and generation, retargeting, behavioral fo
 
 - [Roadmap](#roadmap)
 - [Projects](#projects)
-  - [Motion tracker comparison](#motion-tracker-comparison)
 - [Datasets](#datasets)
   - [Motion control datasets](#motion-control-datasets)
   - [Manipulation datasets](#manipulation-datasets)
@@ -37,7 +36,7 @@ The table follows Party OS from foundational tools to interaction and whole-body
 | Motion Control Infra | Retargeting · `hhtools` | Robot-specific retargeting of human and robot motion. Included as a tool reference; no new integration claimed here. | [RoboParty hhtools](https://github.com/Roboparty/human-humanoid-tools) |
 | Motion Control Infra | Behavioral Foundation Policy · **MimicPortal** | DynamiX Loop’s motion-tracking development repository, initialized from PartyMimic. It is the team entry for this lane; upstream benchmark and deployment evidence is listed separately below. | [Dynamicx-Loop/mimicportal](https://github.com/Dynamicx-Loop/mimicportal) |
 | Motion Control Infra | Upstream tracker reference · `MimicLite` | RoboParty’s model-free PPO/PPO-ROA path for data loading, tracking, training, evaluation and deployment, with physical teleoperation evidence. Reference, not a second DynamiX Loop tracker. | [RoboParty/MimicLite](https://github.com/Roboparty/MimicLite) |
-| Motion Control Infra | Upstream tracker reference · `PartyMimic` | RoboParty’s model-based tracker and MimicPortal’s starting point. Party OS reports 7–30 minutes on one RTX 4090 and leading held-out errors among its G1/RP1 comparisons. These are upstream figures, not Astro results. | [RoboParty/PartyMimic](https://github.com/Roboparty/PartyMimic) · [comparison](https://github.com/Roboparty/Party_OS/blob/main/docs/mimiclite-vs-partymimic.md) |
+| Motion Control Infra | Upstream tracker reference · `PartyMimic` | RoboParty’s model-based tracker and MimicPortal’s starting point. Party OS reports 7–30 minutes on one RTX 4090 and leading held-out errors among its G1/RP1 comparisons. These are upstream figures, not Astro results. | [RoboParty/PartyMimic](https://github.com/Roboparty/PartyMimic) |
 | Motion Control Infra | Unsupervised learning · `UFO` | Team-confirmed repository use. Upstream provides FB/TeCH training, robot-specific motion import and real-robot teleoperation tooling; those upstream capabilities do not imply Astro deployment. | [RoboParty/UFO](https://github.com/Roboparty/UFO) |
 | Motion Control Infra | Action diffusion · `PredActor` | Upstream reference for steering motion generation by jointly predicting future states and directly producing actions with onboard inference. | [RoboParty fork](https://github.com/Roboparty/PredActor) · [MasterYip upstream](https://github.com/MasterYip/PredActor) |
 | Motion Control Infra | Robot-free capture · `Ego Humanoid` | Capture direction preserved from the data box in the Party OS roadmap. No DynamiX Loop capture workflow or dataset release claimed. | [Party OS roadmap](https://github.com/Roboparty/Party_OS#roadmap) |
@@ -46,10 +45,6 @@ The table follows Party OS from foundational tools to interaction and whole-body
 | Interaction & Perception Infra | Perceptive BFM · `P-BFM` | Team-confirmed repository use. The upstream terrain-adaptive controller covers tracking, goal reaching, reward inference and teleoperation. | [RoboParty/P-BFM](https://github.com/Roboparty/P-BFM) |
 | Whole-Body Manipulation Infra | JEPA world model · `INTACT-JEPA` | Upstream reference for predictive world models using action-intent encodings. | [RoboParty fork](https://github.com/Roboparty/INTACT-JEPA) · [ZJU upstream](https://github.com/zju3dv/INTACT-JEPA) |
 | Representation Learning | Anti-collapse loss · `SADL` | Upstream Supply And Demand Loss discourages representation collapse by adding a training objective that relates encoder variation to what the downstream output requires. | [RoboParty fork](https://github.com/Roboparty/SADL) · [ZJU upstream](https://github.com/zju3dv/SADL) |
-
-### Motion tracker comparison
-
-[MimicLite vs PartyMimic](https://github.com/Roboparty/Party_OS/blob/main/docs/mimiclite-vs-partymimic.md) explains the deployment-first and model-based iteration paths. MimicPortal builds on PartyMimic; the two upstream trackers are listed for comparison, not as separately adopted team projects.
 
 **Later branches:** Agentic Humanoid and Agent RSI System remain in the diagram for source parity. No team implementation or adoption is claimed for these branches.
 

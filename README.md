@@ -4,7 +4,7 @@ A humanoid control stack for Astro, from motion data and reusable policies to pe
 
 [GitHub organization](https://github.com/Dynamicx-Loop) · [RoboParty Party OS reference](https://github.com/Roboparty/Party_OS) · [Upstream motion-control know-how (简体中文)](https://roboparty.feishu.cn/wiki/GvUxwKVeNiGa7kku6vEcvqfKn87)
 
-[Roadmap](#roadmap) · [Projects](#projects) · [Datasets](#datasets) · [License](#license)
+[Roadmap](#roadmap) · [Projects](#projects) · [Datasets](#datasets) · [Acknowledgments and References](#acknowledgments-and-references) · [License](#license)
 
 ---
 
@@ -131,6 +131,14 @@ The groupings map to the Agentic Humanoid branch of the reference roadmap.
 </details>
 
 **Astro data and hardware logs:** internal catalog to confirm; track motion and robot-description revisions, frame and clock conventions, calibration inputs, and held-out regression traces separately from upstream data.
+
+## Acknowledgments and References
+
+Thanks to **RoboParty Lab**. [Party OS](https://github.com/Roboparty/Party_OS) provided the roadmap structure, [visual reference](https://github.com/Roboparty/Party_OS/blob/main/assets/party-os-roadmap-en.png), and starting point for the project and dataset catalogs.
+
+- **Motion control:** [PartyMimic](https://github.com/Roboparty/PartyMimic) is the starting point for [MimicPortal](https://github.com/Dynamicx-Loop/mimicportal). We also reference [MimicLite](https://github.com/Roboparty/MimicLite), [UFO](https://github.com/Roboparty/UFO), [hhtools](https://github.com/Roboparty/human-humanoid-tools), and [PredActor](https://github.com/MasterYip/PredActor).
+- **Interaction and world models:** [I-BFM](https://github.com/Roboparty/I-BFM-Code), [P-BFM](https://github.com/Roboparty/P-BFM), [INTACT-JEPA](https://github.com/zju3dv/INTACT-JEPA), and [SADL](https://github.com/zju3dv/SADL) inform the broader stack. The Projects table distinguishes RoboParty forks from their upstream repositories.
+- **Datasets:** Credit goes to the original authors and maintainers linked in the catalog. Use each release’s citation and terms. See [Third-party notices](THIRD_PARTY_NOTICES.md) for more on the Party OS adaptation.
 
 ## License
 

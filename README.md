@@ -32,7 +32,7 @@ The table follows Party OS from foundational tools to interaction and whole-body
 | Layer | Module | Description | Repository |
 |---|---|---|---|
 | Know-how | Knowledge base | RoboParty’s Chinese-language documentation on humanoid control. Kept as a reference. | [Humanoid Motion Control Know-how](https://roboparty.feishu.cn/wiki/GvUxwKVeNiGa7kku6vEcvqfKn87) |
-| Motion Control Infra | Data generation · `generate` | Synthetic motion generation for the tracking data pipeline. Listed in Party OS; the source README does not link released code. | Upstream roadmap |
+| Motion Control Infra | Data generation · `generate` | Planned starting point: evaluate text- and constraint-conditioned motion generation for candidate policy-training trajectories. Astro integration is not yet validated. | [NVIDIA Kimodo](https://github.com/nv-tlabs/kimodo) |
 | Motion Control Infra | Retargeting | **Motion Studio** is our planned primary retargeting workbench. RoboParty’s **hhtools** remains the current alternative while Motion Studio takes over. | [DynamiX Loop Motion Studio](https://github.com/Dynamicx-Loop/motion-studio) · [RoboParty hhtools](https://github.com/Roboparty/human-humanoid-tools) |
 | Motion Control Infra | Behavioral Foundation Policy · **MimicPortal** | DynamiX Loop’s motion-tracking development repository. | [Dynamicx-Loop/mimicportal](https://github.com/Dynamicx-Loop/mimicportal) · [RoboParty upstream](https://github.com/Roboparty/PartyMimic) |
 | Motion Control Infra | Unsupervised learning · `UFO` | Team-confirmed repository use. Upstream provides FB/TeCH training, robot-specific motion import and real-robot teleoperation tooling; those upstream capabilities do not imply Astro deployment. | [RoboParty/UFO](https://github.com/Roboparty/UFO) |

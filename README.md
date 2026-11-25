@@ -1,12 +1,14 @@
 # DynamiX Loop
 
+[![English](https://img.shields.io/badge/Language-English-blue)](README.md) [![简体中文](https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-blue)](README.zh-CN.md)
+
 [Project website · English / 简体中文](https://dynamicx-loop.github.io/dynamix_loop/)
 
-A humanoid control stack for Lumo, from motion data and reusable policies to perception, object interaction, whole-body manipulation and agent-driven skills.
+A humanoid control stack for Lumo, covering motion data, reusable policies, perception, object interaction, whole-body manipulation, and agent-driven skills.
 
-[GitHub organization](https://github.com/Dynamicx-Loop) · [RoboParty Party OS reference](https://github.com/Roboparty/Party_OS)
+[GitHub organization](https://github.com/Dynamicx-Loop)
 
-Motion Control Infra combines capture and generation, retargeting, behavioral foundation policies and deployment. The later branches carry over the Party OS reference structure for item-by-item review. They do not imply team implementation, dates or delivery commitments.
+The motion control stack covers motion capture and generation, retargeting, behavioral foundation policies, and deployment.
 
 ## Table of Contents
 
@@ -25,34 +27,32 @@ Motion Control Infra combines capture and generation, retargeting, behavioral fo
 
 ![DynamiX Loop humanoid control roadmap](assets/dynamix-loop-roadmap.png)
 
-*Working diagram adapted from [RoboParty’s Party OS](https://github.com/Roboparty/Party_OS#roadmap). RoboParty maintains its own [diagram generator](https://github.com/Roboparty/Party_OS/blob/main/scripts/build_roadmap.py); it does not generate this draft.*
-
-**Immediate priority:** build the deployment foundation for sim-to-sim, sim-to-real and real-to-sim. The diagram shows capability progression rather than calendar dates.
+**Immediate priority:** build the deployment foundation for sim-to-sim, sim-to-real, and real-to-sim. The diagram shows how capabilities build on one another, without assigning dates.
 
 ## Projects
 
-**In use** means the team uses the repository. Other third-party entries are upstream references.
+**In use** marks repositories the team uses. Other third-party entries are listed for reference or evaluation.
 
 | Layer | Module | Description | Repository |
 |---|---|---|---|
 | Know-how | Knowledge base | DynamiX Loop’s humanoid control knowledge base. | 🚧 **Under construction** |
 | Motion Control Infra | Data generation · `generate` | Generate motion data for policy training. | [NVIDIA Kimodo](https://github.com/nv-tlabs/kimodo) |
-| Motion Control Infra | Retargeting | **Motion Studio** is our planned primary retargeting workbench. RoboParty’s **hhtools** is the current alternative. | [DynamiX Loop Motion Studio](https://github.com/Dynamicx-Loop/motion-studio) · [RoboParty hhtools](https://github.com/Roboparty/human-humanoid-tools) |
-| Motion Control Infra | Behavioral Foundation Policy · **MimicPortal** | DynamiX Loop’s motion-tracking development repository. | [Dynamicx-Loop/mimicportal](https://github.com/Dynamicx-Loop/mimicportal) · [RoboParty upstream](https://github.com/Roboparty/PartyMimic) |
-| Motion Control Infra | Unsupervised learning · `UFO` | **In use.** Learn reusable humanoid behaviors with FB and TeCH. | [RoboParty/UFO](https://github.com/Roboparty/UFO) |
-| Motion Control Infra | Action diffusion · `PredActor` | Upstream reference for generating motion and actions with diffusion. | [RoboParty fork](https://github.com/Roboparty/PredActor) · [MasterYip upstream](https://github.com/MasterYip/PredActor) |
+| Motion Control Infra | Retargeting | **Motion Studio** is our planned primary retargeting workbench. **hhtools** is the current alternative. | [DynamiX Loop Motion Studio](https://github.com/Dynamicx-Loop/motion-studio) · [hhtools](https://github.com/Roboparty/human-humanoid-tools) |
+| Motion Control Infra | Behavioral Foundation Policy · **MimicPortal** | DynamiX Loop’s motion-tracking development repository. | [Dynamicx-Loop/mimicportal](https://github.com/Dynamicx-Loop/mimicportal) · [Upstream source](https://github.com/Roboparty/PartyMimic) |
+| Motion Control Infra | Unsupervised learning · `UFO` | **In use.** Learn reusable humanoid behaviors with FB and TeCH. | [UFO](https://github.com/Roboparty/UFO) |
+| Motion Control Infra | Action diffusion · `PredActor` | Upstream reference for generating motion and actions with diffusion. | [Reference fork](https://github.com/Roboparty/PredActor) · [MasterYip upstream](https://github.com/MasterYip/PredActor) |
 | Motion Control Infra | Robot-free capture · `Ego Humanoid` | Capture human motion without a robot. | [DynamiX Loop roadmap](#roadmap) |
 | Motion Control Infra | Deployment · **Immediate priority** | Transfer policies across simulators and to robots, and use hardware data to improve simulation. **Sim-to-sim · sim-to-real · real-to-sim.** | Team workstream; no repository specified |
-| Interaction & Perception Infra | Interaction BFM · `I-BFM` | **In use.** Learn whole-body skills for interacting with objects. | [RoboParty/I-BFM-Code](https://github.com/Roboparty/I-BFM-Code) · [deployment example](https://github.com/Roboparty/I-BFM-Code/tree/main/deploy/g1_carry_box_166m) |
-| Interaction & Perception Infra | Perceptive BFM · `P-BFM` | **In use.** Learn terrain-adaptive locomotion and motion tracking. | [RoboParty/P-BFM](https://github.com/Roboparty/P-BFM) |
-| Whole-Body Manipulation Infra | JEPA world model · `INTACT-JEPA` | Upstream reference for predictive world modeling from action intent. | [RoboParty fork](https://github.com/Roboparty/INTACT-JEPA) · [ZJU upstream](https://github.com/zju3dv/INTACT-JEPA) |
-| Representation Learning | Anti-collapse loss · `SADL` | Upstream reference for reducing representation collapse with Supply And Demand Loss. | [RoboParty fork](https://github.com/Roboparty/SADL) · [ZJU upstream](https://github.com/zju3dv/SADL) |
+| Interaction & Perception Infra | Interaction BFM · `I-BFM` | **In use.** Learn whole-body skills for interacting with objects. | [I-BFM](https://github.com/Roboparty/I-BFM-Code) · [deployment example](https://github.com/Roboparty/I-BFM-Code/tree/main/deploy/g1_carry_box_166m) |
+| Interaction & Perception Infra | Perceptive BFM · `P-BFM` | **In use.** Learn terrain-adaptive locomotion and motion tracking. | [P-BFM](https://github.com/Roboparty/P-BFM) |
+| Whole-Body Manipulation Infra | JEPA world model · `INTACT-JEPA` | Upstream reference for predictive world modeling from action intent. | [Reference fork](https://github.com/Roboparty/INTACT-JEPA) · [ZJU upstream](https://github.com/zju3dv/INTACT-JEPA) |
+| Representation Learning | Anti-collapse loss · `SADL` | Upstream reference for reducing representation collapse with Supply And Demand Loss. | [Reference fork](https://github.com/Roboparty/SADL) · [ZJU upstream](https://github.com/zju3dv/SADL) |
 
-**Later branches:** Agentic Humanoid and Agent RSI System remain in the diagram for source parity. No team implementation or adoption is claimed for these branches.
+Agentic Humanoid and Agent RSI System are longer-term directions, with no implementation commitments yet.
 
 ## Datasets
 
-The full Party OS catalog is retained for upstream reference. Obtain data from the original links, cite the releases and check access, licensing, and derivative-work terms before use. Availability in this table is not evidence of Lumo use or permission to redistribute. Register any team-selected examples with exact source version, intended use, retargeting configuration and train/evaluation split.
+This catalog collects datasets for motion control, manipulation, and agent research. Use the linked sources, cite the releases, and check their access and licensing terms before using or redistributing data. For any dataset the team selects, record its version, intended use, retargeting configuration, and training and evaluation splits.
 
 ### Motion control datasets
 
@@ -79,7 +79,7 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 | holosoma | Motion and terrain references for perceptive locomotion and parkour. | meshmimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2509.26633) | [💻&nbsp;GitHub](https://github.com/amazon-far/holosoma) | — |
 | PARC MS | Terrain-aligned motions for obstacle traversal and parkour. | meshmimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2505.04002) | [🤗&nbsp;HF](https://huggingface.co/datasets/YaojieShen/hhtools_parc_ms) | — |
 | Parkour Mocap | 143 clips of obstacle movements, including vaults, slopes, beam balance and flips, with 120 Hz optical capture. | meshmimic | — | [🤗&nbsp;HF](https://huggingface.co/datasets/YaojieShen/hhtools_parkour_mocap) | — |
-| any4hdmi collection | A collection of datasets already converted for MimicLite training. | — | — | [🤗&nbsp;HF](https://huggingface.co/collections/elijahgalahad/any4hdmi) | — |
+| any4hdmi collection | A collection of motion datasets in a format ready for policy training. | — | — | [🤗&nbsp;HF](https://huggingface.co/collections/elijahgalahad/any4hdmi) | — |
 
 </details>
 
@@ -123,7 +123,7 @@ Several entries use [LeRobot](https://huggingface.co/lerobot), a shared format f
 
 <br>
 
-The groupings map to the Agentic Humanoid branch of the reference roadmap.
+The categories follow the Agentic Humanoid branch of the roadmap.
 
 | Roadmap item | Dataset | Content | Paper | Download |
 |---|---|---|---|---|
@@ -144,11 +144,11 @@ The groupings map to the Agentic Humanoid branch of the reference roadmap.
 
 </details>
 
-**Lumo data and hardware logs:** internal catalog to confirm; track motion and robot-description revisions, frame and clock conventions, calibration inputs, and held-out regression traces separately from upstream data.
+**Internal data and hardware logs:** Track motion and robot-description revisions, frame and clock conventions, calibration inputs, and held-out regression traces separately from external datasets.
 
 ## Acknowledgments and References
 
-Thanks to **RoboParty Lab**. [Party OS](https://github.com/Roboparty/Party_OS) provided the roadmap structure, [visual reference](https://github.com/Roboparty/Party_OS/blob/main/assets/party-os-roadmap-en.png), and starting point for the project and dataset catalogs.
+Thanks to **RoboParty Lab**. [Party OS](https://github.com/Roboparty/Party_OS) provided the roadmap structure, [visual reference](https://github.com/Roboparty/Party_OS/blob/main/assets/party-os-roadmap-en.png), and starting point for the project and dataset catalogs. See the [original roadmap](https://github.com/Roboparty/Party_OS#roadmap) and its [diagram generator](https://github.com/Roboparty/Party_OS/blob/main/scripts/build_roadmap.py).
 
 - **Motion control:** [PartyMimic](https://github.com/Roboparty/PartyMimic) is the starting point for [MimicPortal](https://github.com/Dynamicx-Loop/mimicportal). We also reference [MimicLite](https://github.com/Roboparty/MimicLite), [UFO](https://github.com/Roboparty/UFO), [hhtools](https://github.com/Roboparty/human-humanoid-tools), and [PredActor](https://github.com/MasterYip/PredActor).
 - **Interaction and world models:** [I-BFM](https://github.com/Roboparty/I-BFM-Code), [P-BFM](https://github.com/Roboparty/P-BFM), [INTACT-JEPA](https://github.com/zju3dv/INTACT-JEPA), and [SADL](https://github.com/zju3dv/SADL) inform the broader stack. The Projects table distinguishes RoboParty forks from their upstream repositories.

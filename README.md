@@ -19,7 +19,9 @@ Motion Control Infra combines capture and generation, retargeting, behavioral fo
 
 ## Roadmap
 
-![DynamiX Loop humanoid control team roadmap](assets/dynamix-loop-roadmap.png)
+**English** · [简体中文](assets/dynamix-loop-roadmap-zh.png)
+
+![DynamiX Loop humanoid control roadmap](assets/dynamix-loop-roadmap.png)
 
 *Working diagram adapted from [RoboParty’s Party OS](https://github.com/Roboparty/Party_OS#roadmap). RoboParty maintains its own [diagram generator](https://github.com/Roboparty/Party_OS/blob/main/scripts/build_roadmap.py); it does not generate this draft.*
 

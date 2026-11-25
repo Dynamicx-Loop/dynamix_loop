@@ -1,6 +1,8 @@
 # DynamiX Loop
 
-A humanoid control stack for Astro, from motion data and reusable policies to perception, object interaction, whole-body manipulation and agent-driven skills.
+[Project website · English / 简体中文](https://dynamicx-loop.github.io/dynamix_loop/)
+
+A humanoid control stack for Lumo, from motion data and reusable policies to perception, object interaction, whole-body manipulation and agent-driven skills.
 
 [GitHub organization](https://github.com/Dynamicx-Loop) · [RoboParty Party OS reference](https://github.com/Roboparty/Party_OS)
 
@@ -50,7 +52,7 @@ Motion Control Infra combines capture and generation, retargeting, behavioral fo
 
 ## Datasets
 
-The full Party OS catalog is retained for upstream reference. Obtain data from the original links, cite the releases and check access, licensing, and derivative-work terms before use. Availability in this table is not evidence of Astro use or permission to redistribute. Register any team-selected examples with exact source version, intended use, retargeting configuration and train/evaluation split.
+The full Party OS catalog is retained for upstream reference. Obtain data from the original links, cite the releases and check access, licensing, and derivative-work terms before use. Availability in this table is not evidence of Lumo use or permission to redistribute. Register any team-selected examples with exact source version, intended use, retargeting configuration and train/evaluation split.
 
 ### Motion control datasets
 
@@ -142,7 +144,7 @@ The groupings map to the Agentic Humanoid branch of the reference roadmap.
 
 </details>
 
-**Astro data and hardware logs:** internal catalog to confirm; track motion and robot-description revisions, frame and clock conventions, calibration inputs, and held-out regression traces separately from upstream data.
+**Lumo data and hardware logs:** internal catalog to confirm; track motion and robot-description revisions, frame and clock conventions, calibration inputs, and held-out regression traces separately from upstream data.
 
 ## Acknowledgments and References
 
@@ -154,4 +156,4 @@ Thanks to **RoboParty Lab**. [Party OS](https://github.com/Roboparty/Party_OS) p
 
 ## License
 
-This is a private review draft. No umbrella license for independent DynamiX Loop material is declared here. See [third-party notices](THIRD_PARTY_NOTICES.md) and the [upstream GPL-3.0 text](licenses/Party-OS-GPL-3.0.txt) for Party OS-derived material. The upstream [Party OS repository](https://github.com/Roboparty/Party_OS/blob/main/LICENSE) uses GPL-3.0; individual projects, robot assets, datasets and weights have their own terms. Verify each referenced artifact and any distribution requirements before publishing or reusing it.
+No umbrella license for independent DynamiX Loop material is declared here. See [third-party notices](THIRD_PARTY_NOTICES.md) and the [upstream GPL-3.0 text](licenses/Party-OS-GPL-3.0.txt) for Party OS-derived material. The upstream [Party OS repository](https://github.com/Roboparty/Party_OS/blob/main/LICENSE) uses GPL-3.0; individual projects, robot assets, datasets and weights have their own terms. Verify each referenced artifact and any distribution requirements before publishing or reusing it.

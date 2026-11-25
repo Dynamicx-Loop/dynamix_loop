@@ -53,7 +53,7 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 ### Motion control datasets
 
 <details open>
-<summary>🏃 <strong>Motion control</strong>: human motion, interaction and terrain motion for tracking policies (14)</summary>
+<summary>🏃 <strong>Motion control</strong>: human motion, interaction and terrain motion for tracking policies (15)</summary>
 
 <br>
 
@@ -62,7 +62,7 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 | Dataset | Content | hhtools mode | Paper | Download | DynamiX Loop usage |
 |---|---|---|---|---|---|
 | AMASS | Combined optical capture collections represented in SMPL-X. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/1904.03278) | [🌐&nbsp;site](https://amass.is.tue.mpg.de/) | — |
-| LAFAN1 | BVH capture of movement including locomotion, dance, falls and recovery. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2102.04942) | [💻&nbsp;GitHub](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | — |
+| LAFAN1 | BVH capture of movement including locomotion, dance, falls and recovery. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2102.04942) | [💻&nbsp;GitHub](https://github.com/ubisoft/ubisoft-laforge-animation-dataset) | MimicPortal |
 | BONES-SEED (SOMA) | Broad motion-capture corpus using the SOMA representation. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2603.16858) | [🤗&nbsp;HF](https://huggingface.co/datasets/bones-studio/seed) | MimicPortal |
 | 100STYLE | Characterful walking and running recorded with Xsens, distributed as 60 Hz BVH. | mimic | [📄&nbsp;ACM](https://dl.acm.org/doi/10.1145/3522618) | [🌐&nbsp;site](https://www.ianxmason.com/100style/) | MimicPortal |
 | Motion-X | Full-body motion recovered from video footage. | mimic | [📄&nbsp;NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2023/file/4f8e27f6036c1d8b4a66b5b3a947dd7b-Paper-Datasets_and_Benchmarks.pdf) | [💻&nbsp;GitHub](https://github.com/IDEA-Research/Motion-X) | — |
@@ -70,6 +70,7 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 | GVHMR | Tool for reconstructing human motion from a single-camera video. | mimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2409.06662) | [💻&nbsp;GitHub](https://github.com/zju3dv/GVHMR) | — |
 | OMOMO | Motion sequences involving people and manipulated objects. | intermimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2309.16237) | [🤗&nbsp;HF](https://huggingface.co/datasets/YaojieShen/hhtools_omomo) | — |
 | OmniContact | Human–object sequences recorded with optical motion capture at 90 Hz. | intermimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2606.26201) | [🤗&nbsp;HF](https://huggingface.co/datasets/lightcone02/OmniContact-Dataset) | — |
+| HiPHI | Optical motion capture of whole-body human motion and object interaction. | — | [Noitom Robotics](https://noitomrobotics.com/hiphi-a-large-scale-benchmark-for-high-precision-human-motion-and-object-interaction/) | [Hugging Face](https://huggingface.co/datasets/noitomrobotics/HiPHI) | — |
 | holosoma | Motion and terrain references for perceptive locomotion and parkour. | meshmimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2509.26633) | [💻&nbsp;GitHub](https://github.com/amazon-far/holosoma) | — |
 | PARC MS | Terrain-aligned motions for obstacle traversal and parkour. | meshmimic | [📄&nbsp;arXiv](https://arxiv.org/abs/2505.04002) | [🤗&nbsp;HF](https://huggingface.co/datasets/YaojieShen/hhtools_parc_ms) | — |
 | Parkour Mocap | 143 clips of obstacle movements, including vaults, slopes, beam balance and flips, with 120 Hz optical capture. | meshmimic | — | [🤗&nbsp;HF](https://huggingface.co/datasets/YaojieShen/hhtools_parkour_mocap) | — |

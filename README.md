@@ -4,11 +4,19 @@ A humanoid control stack for Astro, from motion data and reusable policies to pe
 
 [GitHub organization](https://github.com/Dynamicx-Loop) · [RoboParty Party OS reference](https://github.com/Roboparty/Party_OS) · [Upstream motion-control know-how (简体中文)](https://roboparty.feishu.cn/wiki/GvUxwKVeNiGa7kku6vEcvqfKn87)
 
-[Roadmap](#roadmap) · [Projects](#projects) · [Datasets](#datasets) · [Acknowledgments and References](#acknowledgments-and-references) · [License](#license)
-
----
-
 Motion Control Infra combines capture and generation, retargeting, behavioral foundation policies and deployment. The later branches carry over the Party OS reference structure for item-by-item review. They do not imply team implementation, dates or delivery commitments.
+
+## Table of Contents
+
+- [Roadmap](#roadmap)
+- [Projects](#projects)
+  - [Motion tracker comparison](#motion-tracker-comparison)
+- [Datasets](#datasets)
+  - [Motion control datasets](#motion-control-datasets)
+  - [Manipulation datasets](#manipulation-datasets)
+  - [Agent datasets](#agent-datasets)
+- [Acknowledgments and References](#acknowledgments-and-references)
+- [License](#license)
 
 ## Roadmap
 
@@ -39,13 +47,17 @@ The table follows Party OS from foundational tools to interaction and whole-body
 | Whole-Body Manipulation Infra | JEPA world model · `INTACT-JEPA` | Upstream reference for predictive world models using action-intent encodings. | [RoboParty fork](https://github.com/Roboparty/INTACT-JEPA) · [ZJU upstream](https://github.com/zju3dv/INTACT-JEPA) |
 | Representation Learning | Anti-collapse loss · `SADL` | Upstream Supply And Demand Loss discourages representation collapse by adding a training objective that relates encoder variation to what the downstream output requires. | [RoboParty fork](https://github.com/Roboparty/SADL) · [ZJU upstream](https://github.com/zju3dv/SADL) |
 
-**Motion tracker comparison:** [MimicLite vs PartyMimic](https://github.com/Roboparty/Party_OS/blob/main/docs/mimiclite-vs-partymimic.md) explains the deployment-first and model-based iteration paths. MimicPortal builds on PartyMimic; the two upstream trackers are listed for comparison, not as separately adopted team projects.
+### Motion tracker comparison
+
+[MimicLite vs PartyMimic](https://github.com/Roboparty/Party_OS/blob/main/docs/mimiclite-vs-partymimic.md) explains the deployment-first and model-based iteration paths. MimicPortal builds on PartyMimic; the two upstream trackers are listed for comparison, not as separately adopted team projects.
 
 **Later branches:** Agentic Humanoid and Agent RSI System remain in the diagram for source parity. No team implementation or adoption is claimed for these branches.
 
 ## Datasets
 
 The full Party OS catalog is retained for upstream reference. Obtain data from the original links, cite the releases and check access, licensing, and derivative-work terms before use. Availability in this table is not evidence of Astro use or permission to redistribute. Register any team-selected examples with exact source version, intended use, retargeting configuration and train/evaluation split.
+
+### Motion control datasets
 
 <details open>
 <summary>🏃 <strong>Motion control</strong>: human motion, interaction and terrain motion for tracking policies (14)</summary>
@@ -72,6 +84,8 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 | any4hdmi collection | A collection of datasets already converted for MimicLite training. | — | — | [🤗&nbsp;HF](https://huggingface.co/collections/elijahgalahad/any4hdmi) | MimicLite training |
 
 </details>
+
+### Manipulation datasets
 
 <details open>
 <summary>🤲 <strong>Manipulation</strong>: robot teleoperation, humanoid, egocentric human and simulation data (19)</summary>
@@ -103,6 +117,8 @@ The full Party OS catalog is retained for upstream reference. Obtain data from t
 Several entries use [LeRobot](https://huggingface.co/lerobot), a shared format for training data; verify it at the individual source.
 
 </details>
+
+### Agent datasets
 
 <details open>
 <summary>🧠 <strong>Agent</strong>: task planning, embodied QA, navigation and 3D scene understanding (14)</summary>

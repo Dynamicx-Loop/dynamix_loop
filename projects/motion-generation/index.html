@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion generation · DynamiX Loop</title>
+<link rel="stylesheet" href="../../site.css">
+<link rel="alternate" hreflang="zh-CN" href="zh-CN.html">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap nav">
+<a class="brand" href="../../index.html">DynamiX Loop</a>
+<nav aria-label="Main navigation"><a href="../../index.html" aria-current="true">Projects</a><a href="../../about.html">About</a></nav>
+<div class="lang" aria-label="Language"><span aria-current="true">English</span><a lang="zh-CN" hreflang="zh-CN" href="zh-CN.html">简体中文</a></div>
+</div></header>
+<main id="main" class="project-detail">
+<section><div class="wrap">
+<h1>Motion generation</h1>
+<p class="project-description">KIMODO generates motion from text prompts and motion constraints. MotionBricks generates motion from keyframes. Both produce reference trajectories for a general-purpose whole-body tracking policy.</p>
+<ul class="project-resources" aria-label="Project resources">
+<li><span class="project-resource project-resource--pending">GitHub<small>Not available</small></span></li>
+<li><span class="project-resource project-resource--pending">Paper<small>Not available</small></span></li>
+<li><span class="project-resource project-resource--pending">Project Page<small>Not available</small></span></li>
+<li><span class="project-resource project-resource--pending">Interactive Demo<small>Not available</small></span></li>
+</ul>
+<div class="project-demo-group" role="group" aria-labelledby="motionbricks-demos">
+<h2 id="motionbricks-demos">MotionBricks</h2>
+<div class="project-demo-pair">
+<figure class="project-demo">
+<video autoplay controls muted loop playsinline preload="metadata" poster="../../assets/motion-generation/newton-keyframes.jpg" width="960" height="540" aria-label="Simulation demo"><source src="../../assets/motion-generation/newton-keyframes.mp4" type="video/mp4"></video>
+<figcaption>Newton simulation: MotionBricks generates reference trajectories from keyframes, and the tracker follows them.</figcaption>
+</figure>
+<figure class="project-demo">
+<video autoplay controls muted loop playsinline preload="metadata" poster="../../assets/motion-generation/motionbricks-hardware-from-50s.jpg" width="1280" height="720" aria-label="MotionBricks early hardware trial"><source src="../../assets/motion-generation/motionbricks-hardware-from-50s.mp4" type="video/mp4"></video>
+<figcaption>Early hardware trial: The generation-to-tracking pipeline runs on the robot; tracking quality still needs refinement.</figcaption>
+</figure>
+</div>
+</div>
+<div class="project-demo-group" role="group" aria-labelledby="kimodo-demos">
+<h2 id="kimodo-demos">KIMODO</h2>
+<div class="project-demo-pair">
+<figure class="project-demo">
+<video autoplay class="project-demo-video--kimodo" controls muted loop playsinline preload="metadata" poster="../../assets/motion-generation/kimodo-sonic.jpg" width="1474" height="1080" aria-label="KIMODO simulation demo"><source src="../../assets/motion-generation/kimodo-sonic.mp4" type="video/mp4"></video>
+<figcaption>KIMODO simulation: the robot tracks a generated motion reference.</figcaption>
+</figure>
+<figure class="project-demo">
+<video autoplay class="project-demo-video--kimodo project-demo-video--kimodo-hardware" controls muted loop playsinline preload="metadata" poster="../../assets/motion-generation/kimodo-hardware-framed.jpg" width="720" height="720" aria-label="KIMODO early hardware trial"><source src="../../assets/motion-generation/kimodo-hardware-framed.mp4" type="video/mp4"></video>
+<figcaption>Early hardware trial: The generation-to-tracking pipeline runs on the robot; tracking quality still needs refinement.</figcaption>
+</figure>
+</div>
+</div>
+</div></section>
+</main>
+</body>
+</html>

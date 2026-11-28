@@ -1,4 +1,4 @@
-# Dynamics Loop Nexus (DLN) agent guide
+# DynamiX Loop Nexus (DLN) agent guide
 
 Start with [the shared wiki](docs/wiki.md), then use [the checkout map](README.md) and [the pipeline guide](docs/pipeline.md) for cross-repo work. Before editing a module, locate and read its own applicable agent instructions, verify its Git root, and check its working tree. Preserve existing user changes. Keep implementation and per-module tests in their own repositories.
 

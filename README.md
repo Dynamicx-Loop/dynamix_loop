@@ -1,4 +1,4 @@
-# Dynamics Loop Nexus
+# DynamiX Loop Nexus
 
 DLN is the home repo for the DynamiX Loop motion-control pipeline:
 
@@ -25,3 +25,17 @@ Start cross-repo Codex chats here. Keep implementation, CI, and repo-specific in
 Start with the [shared wiki](docs/wiki.md) for cross-repo decisions and links to the [pipeline handoffs and validation guide](docs/pipeline.md). This starter does not run training, launch simulation, or deploy to hardware.
 
 The organization pattern is adapted from [Matt Pocock’s Home Repo pattern](https://www.youtube.com/watch?v=hWe-j78vNpc).
+
+## Project website
+
+The bilingual site and its demo assets live in [`site/`](site/index.html).
+Preview locally from the repo root:
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1 --directory site
+```
+
+Open [English](http://127.0.0.1:8000/) or [简体中文](http://127.0.0.1:8000/zh-CN.html).
+This is a local source migration from the `dynamix_loop_pages` checkout at
+`f4c2eb8275bafcab25365dbe635e74c646a68cee`. The original checkout and current GitHub Pages deployment
+were left unchanged. Edit the source here; publishing is a separate step.

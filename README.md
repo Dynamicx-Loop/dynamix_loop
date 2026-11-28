@@ -22,6 +22,6 @@ Start cross-repo Codex chats here. Keep implementation, CI, and repo-specific in
    ```
    For a single-repo change, start a chat in that repo or grant access only to the checkout you need.
 
-See [pipeline contracts and validation](docs/pipeline.md). This starter does not run training, launch simulation, or deploy to hardware.
+Start with the [shared wiki](docs/wiki.md) for cross-repo decisions and links to the [pipeline handoffs and validation guide](docs/pipeline.md). This starter does not run training, launch simulation, or deploy to hardware.
 
 The organization pattern is adapted from [Matt Pocock’s Home Repo pattern](https://www.youtube.com/watch?v=hWe-j78vNpc).

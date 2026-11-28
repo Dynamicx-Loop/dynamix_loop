@@ -2,7 +2,7 @@
 
 [![English](https://img.shields.io/badge/Language-English-blue)](README.md) [![简体中文](https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-blue)](README.zh-CN.md)
 
-[Project website · English / 简体中文](https://dynamicx-loop.github.io/dynamix_loop/)
+[Project website · English / 简体中文](https://dynamicx-loop.github.io/dynamix_loop_nexus/)
 
 A humanoid control stack for Lumo, covering motion data, reusable policies, perception, object interaction, whole-body manipulation, and agent-driven skills.
 

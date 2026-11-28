@@ -38,7 +38,9 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 Open [English](http://127.0.0.1:8000/) or [简体中文](http://127.0.0.1:8000/zh-CN.html).
 The `gh-pages` branch preserves the original site history and has the website
 at its root. Use `main:site/` for source edits. Refreshing `gh-pages` and
-publishing to GitHub Pages are separate steps; this checkout has no remote.
+publishing to GitHub Pages are separate steps. The public site is built
+from the root of `gh-pages`: [English](https://dynamicx-loop.github.io/dynamix_loop_nexus/)
+· [简体中文](https://dynamicx-loop.github.io/dynamix_loop_nexus/zh-CN.html).
 
 ## Roadmap
 

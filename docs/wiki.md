@@ -8,6 +8,8 @@ This is the starting point for decisions that affect more than one motion-contro
 - [Agent guide](../AGENTS.md): how to work across checkouts without moving implementation into DLN.
 - [Pipeline handoffs and sim-to-sim validation](pipeline.md): what to record at each boundary and how to compare the current and proposed deployment stacks.
 
+Menagerie Lite is the shared model reference. Which model variants each pipeline stage uses, and how they map to other robot descriptions, are still open decisions.
+
 ## Open decisions
 
 | Boundary | What remains to decide |

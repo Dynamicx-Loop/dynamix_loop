@@ -4,4 +4,6 @@ Start with [the shared wiki](docs/wiki.md), then use [the checkout map](README.m
 
 For cross-repo tasks, identify the affected handoff, agree on compatibility, and report the branches or commit IDs and evidence from each affected module. Do not change another module merely to make the interfaces look alike. Nexus may hold contracts, run records, and shared tooling, not module implementations.
 
+When using Menagerie Lite, record the model path, variant, and commit. Check each consumer’s joint ordering and actuator conventions before treating models as interchangeable. Keep the models in their own repo.
+
 Do not add datasets, model weights, credentials, or raw logs to Git. Do not initiate hardware runs, push, or publish unless separately authorized. Prefer simulation for integration checks and label what was actually validated.

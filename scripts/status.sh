@@ -27,4 +27,5 @@ show() {
 show 'Motion Studio' "${DXL_MOTION_STUDIO:-$base/../motion-studio}"
 show 'Mimic Portal' "${DXL_MIMIC_PORTAL:-$base/../mimicportal}"
 show 'RL Deploy' "${DXL_RL_DEPLOY:-$base/../dobot-ws/rl_deploy}"
+show 'Menagerie Lite' "${DXL_MENAGERIE_LITE:-$base/../menagerie_lite}"
 exit "$rc"

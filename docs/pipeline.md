@@ -7,6 +7,10 @@ The following are fields to capture and verify against the real code, not a spec
 | Motion Studio → Mimic Portal | Dataset version and location, robot model/configuration, format, joint order, units, frame conventions, sampling rate, and normalization or preprocessing |
 | Mimic Portal → RL Deploy | ONNX artifact and checksum, robot configuration, observation/action names and layout, normalization and scaling, history, control rate, and expected runtime/inputs |
 
+## Robot model provenance
+
+If a run uses Menagerie Lite, record the Git commit, model file and variant (including hand and actuator configuration), and the scene or wrapper used in simulation. Verify compatibility in each consumer; the catalog’s presence in Nexus does not mean the three stages already load it directly.
+
 ## First integration case: deployment refactor
 
 1. Select a known-good Lumo ONNX policy bundle and one repeatable simulation case. Record the policy hash, robot configuration, simulator and test inputs.

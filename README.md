@@ -1,6 +1,6 @@
-# DXL Nexus
+# Dynamics Loop Nexus
 
-The home repo for the DynamiX Loop motion-control pipeline:
+DLN is the home repo for the DynamiX Loop motion-control pipeline:
 
 **Motion Studio → retargeted motion data → Mimic Portal → ONNX policy bundle → RL Deploy → sim-to-sim → separately approved hardware validation.**
 

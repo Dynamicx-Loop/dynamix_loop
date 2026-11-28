@@ -4,6 +4,7 @@ This is the starting point for decisions that affect more than one motion-contro
 
 - [Repo map and local setup](../README.md): where each repo lives and what it owns.
 - [Project website](../site/index.html): bilingual pages and demo assets. See the repo README for local preview.
+- [Roadmap](../roadmap/README.md): the original bilingual DynamiX Loop documentation.
 - [Agent guide](../AGENTS.md): how to work across checkouts without moving implementation into DLN.
 - [Pipeline handoffs and sim-to-sim validation](pipeline.md): what to record at each boundary and how to compare the current and proposed deployment stacks.
 

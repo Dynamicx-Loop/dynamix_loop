@@ -36,6 +36,11 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 ```
 
 Open [English](http://127.0.0.1:8000/) or [简体中文](http://127.0.0.1:8000/zh-CN.html).
-This is a local source migration from the `dynamix_loop_pages` checkout at
-`f4c2eb8275bafcab25365dbe635e74c646a68cee`. The original checkout and current GitHub Pages deployment
-were left unchanged. Edit the source here; publishing is a separate step.
+The `gh-pages` branch preserves the original site history and has the website
+at its root. Use `main:site/` for source edits. Refreshing `gh-pages` and
+publishing to GitHub Pages are separate steps; this checkout has no remote.
+
+## Roadmap
+
+The prior DynamiX Loop documentation is under `roadmap/`: [English](roadmap/README.md)
+and [简体中文](roadmap/README.zh-CN.md). Its original main history is preserved.

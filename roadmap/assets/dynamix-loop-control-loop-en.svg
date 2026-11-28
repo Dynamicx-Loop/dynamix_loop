@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1060" viewBox="0 0 1800 1060" role="img">
+<title>Humanoid Control Architecture</title>
+<defs><marker id="cmd" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#224EDA"/></marker><marker id="fb" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#00766B"/></marker></defs>
+<rect x="0" y="0" width="1800" height="1060" rx="0" fill="#F5F8FF"/>
+<text x="52" y="57" text-anchor="start" fill="#3150A0" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="20" font-weight="700">DYNAMIX LOOP  /  ARCHITECTURE COMPANION</text>
+<text x="52" y="117" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="50" font-weight="750">Humanoid Control Architecture</text>
+<text x="53" y="153" text-anchor="start" fill="#4C5C78" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="22" font-weight="400">How control capabilities support skills and task intelligence.</text>
+<rect x="46" y="183" width="620" height="633" rx="20" fill="#FFFFFF" stroke="#D8E3F5" stroke-width="1.2"/>
+<defs><marker id="dep" markerWidth="6" markerHeight="6" refX="5.5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#00766B"/></marker><marker id="bypass" markerWidth="6" markerHeight="6" refX="5.5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#B35618"/></marker></defs>
+<rect x="46" y="183" width="620" height="633" rx="20" fill="#FFFFFF" stroke="#D8E3F5" stroke-width="1.2"/>
+<circle cx="356" cy="465" r="232" fill="none" stroke="#E7EDF8" stroke-width="1.5"/>
+<path d="M 159.9 548.2 A 213 213 0 0 1 330.0 253.6 L 340.3 337.0 A 129 129 0 0 0 237.3 515.4 Z" fill="#E5F7F4" stroke="#116D6C" stroke-width="3" stroke-dasharray="9 6"/>
+<text x="208" y="386" text-anchor="middle" fill="#116D6C" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="750">System 1</text>
+<path d="M 382.0 253.6 A 213 213 0 0 1 552.1 548.2 L 474.7 515.4 A 129 129 0 0 0 371.7 337.0 Z" fill="#F2ECFF" stroke="#6845A9" stroke-width="2"/>
+<text x="504" y="386" text-anchor="middle" fill="#6845A9" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="750">System 2</text>
+<path d="M 526.1 593.2 A 213 213 0 0 1 185.9 593.2 L 253.0 542.6 A 129 129 0 0 0 459.0 542.6 Z" fill="#EBF1FF" stroke="#234EB9" stroke-width="2"/>
+<text x="356" y="642" text-anchor="middle" fill="#234EB9" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="23" font-weight="750">System 0</text>
+<path d="M 226.3 657.3 A 232 232 0 0 1 124.6 481.2" fill="none" stroke="#00766B" stroke-width="4" stroke-linecap="round" marker-end="url(#dep)"/>
+<path d="M 254.3 256.5 A 232 232 0 0 1 457.7 256.5" fill="none" stroke="#00766B" stroke-width="4" stroke-linecap="round" marker-end="url(#dep)"/>
+<path d="M 587.4 481.2 A 232 232 0 0 1 485.7 657.3" fill="none" stroke="#B35618" stroke-width="4" stroke-linecap="round" marker-end="url(#bypass)"/>
+<text x="356" y="404" text-anchor="middle" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="25" font-weight="750">Control loop</text>
+<text x="356" y="441" text-anchor="middle" fill="#00766B" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="17" font-weight="750">S0 outputs → S1</text>
+<text x="356" y="468" text-anchor="middle" fill="#00766B" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="17" font-weight="750">S1 skills → S2</text>
+<text x="356" y="495" text-anchor="middle" fill="#00766B" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="15" font-weight="500">Supports the next layer</text>
+<text x="356" y="528" text-anchor="middle" fill="#B35618" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="17" font-weight="750">Direct call: S2 → S0</text>
+<text x="356" y="552" text-anchor="middle" fill="#B35618" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="15" font-weight="500">Current bypass</text>
+<text x="356" y="725" text-anchor="middle" fill="#435979" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="17" font-weight="600">Execution and state feedback</text>
+<rect x="159" y="746" width="394" height="51" rx="12" fill="#E9EEF7"/>
+<text x="356" y="768" text-anchor="middle" fill="#283A5A" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="17" font-weight="700">Hardware foundation</text>
+<text x="356" y="789" text-anchor="middle" fill="#4B5A75" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="14" font-weight="500">Joint modules · Robot · SDK</text>
+<rect x="687" y="183" width="1067" height="199" rx="20" fill="#FFFFFF" stroke="#D8E3F5" stroke-width="1.2"/>
+<rect x="702" y="196" width="1037" height="42" rx="11" fill="#F2ECFF"/>
+<text x="723" y="225" text-anchor="start" fill="#6845A9" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="23" font-weight="700">System 2  /  Task intelligence</text>
+<text x="724" y="259" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Embodied memory</text>
+<text x="724" y="281" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Memory and reasoning over long-horizon tasks.</text>
+<text x="724" y="304" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Replanning</text>
+<text x="724" y="326" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Task decomposition, polling and task planning.  ·  PartyDojo</text>
+<text x="724" y="349" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Spatial understanding</text>
+<text x="724" y="371" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Scene semantics, navigation and agent VLN.  ·  VIStream</text>
+<rect x="687" y="395" width="1067" height="161" rx="20" fill="#FFFFFF" stroke="#116D6C" stroke-width="2" stroke-dasharray="9 6"/>
+<rect x="702" y="408" width="1037" height="42" rx="11" fill="#E5F7F4"/>
+<text x="723" y="437" text-anchor="start" fill="#116D6C" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="23" font-weight="700">System 1  /  Reusable skills</text>
+<rect x="1494" y="415" width="226" height="28" rx="14" fill="#D0ECE8"/>
+<text x="1607" y="435" text-anchor="middle" fill="#116D6C" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="17" font-weight="750">Capability gap</text>
+<text x="724" y="471" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Representation and alignment</text>
+<text x="724" y="493" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Unify skill representations and align them with tasks.  ·  INTACT, SADL</text>
+<text x="724" y="516" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Primitives and composition</text>
+<text x="724" y="538" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Combine reusable skill primitives into more complex behaviors.</text>
+<rect x="687" y="569" width="1067" height="247" rx="20" fill="#FFFFFF" stroke="#D8E3F5" stroke-width="1.2"/>
+<rect x="702" y="582" width="1037" height="42" rx="11" fill="#EBF1FF"/>
+<text x="723" y="611" text-anchor="start" fill="#234EB9" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="23" font-weight="700">System 0  /  Physical control</text>
+<text x="724" y="645" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Motion tracking and BFM</text>
+<text x="724" y="667" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Accuracy, robustness and motion generalization.  ·  MimicPortal, UFO, PredActor, MimicAll</text>
+<text x="724" y="699" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Contact, force and terrain</text>
+<text x="724" y="721" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Perceptive movement; scene and object interaction.  ·  P-BFM, Parkour, I-BFM, table tennis</text>
+<text x="724" y="753" text-anchor="start" fill="#162747" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="19" font-weight="700">Extensions</text>
+<text x="724" y="775" text-anchor="start" fill="#3D5070" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Dexterous hands, adaptation to unseen environments and self-awareness.</text>
+<rect x="46" y="834" width="1708" height="157" rx="20" fill="#FFF7E9" stroke="#F0D3A4" stroke-width="1.2"/>
+<text x="70" y="872" text-anchor="start" fill="#724707" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="26" font-weight="750">Shared infrastructure spans all layers</text>
+<text x="71" y="912" text-anchor="start" fill="#724707" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="20" font-weight="700">Real2Sim2Real</text>
+<text x="71" y="940" text-anchor="start" fill="#534B3D" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Scene reconstruction → motion generation</text>
+<text x="71" y="963" text-anchor="start" fill="#534B3D" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">→ simulated training → data feedback</text>
+<path d="M613 890 v78" stroke="#E9CE9F" stroke-width="1.5"/>
+<text x="630" y="912" text-anchor="start" fill="#724707" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="20" font-weight="700">Agent Work</text>
+<text x="630" y="940" text-anchor="start" fill="#534B3D" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Agents in research, engineering</text>
+<text x="630" y="963" text-anchor="start" fill="#534B3D" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">and operations</text>
+<path d="M1172 890 v78" stroke="#E9CE9F" stroke-width="1.5"/>
+<text x="1189" y="912" text-anchor="start" fill="#724707" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="20" font-weight="700">Data and deployment</text>
+<text x="1189" y="940" text-anchor="start" fill="#534B3D" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Retargeting, egocentric capture, sim-to-real,</text>
+<text x="1189" y="963" text-anchor="start" fill="#534B3D" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">onboard inference  ·  Motion Studio, KnowHow</text>
+<text x="50" y="1025" text-anchor="start" fill="#4C5C78" font-family="Helvetica Neue, PingFang SC, Hiragino Sans GB, Arial, sans-serif" font-size="18" font-weight="400">Conceptual view. Named tools illustrate the architecture; they do not indicate integration or delivery status.</text>
+</svg>
